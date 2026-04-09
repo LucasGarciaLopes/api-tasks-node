@@ -9,13 +9,32 @@ API simples de gerenciamento de tarefas (To-Do List) desenvolvida com Node.js e 
 - JSON
 
 ## 📌 Funcionalidades
-
 - Listar todas as tarefas
 - Criar nova tarefa
 - Deletar tarefa
 
 ## ▶️ Como rodar o projeto
 
-```bash
 npm install
 node server.js
+
+Servidor roda em:
+http://localhost:3000
+
+## 🔗 Rotas da API
+
+### GET /tasks
+Lista todas as tarefas
+
+### POST /tasks
+Cria uma nova tarefa
+
+Body JSON:
+{
+  "title": "Minha tarefa"
+}
+
+### DELETE /tasks/:id
+Deleta uma tarefa pelo ID
+
+## 🧪 Testado com Postman
